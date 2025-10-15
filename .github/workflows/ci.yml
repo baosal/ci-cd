@@ -11,14 +11,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22'
+
+      - name: install dependencies
+        run: npm install
+        
       - name: run lint
         run: npm run lint
 
       - name: run tests
         run: npm test
-
-      - name: install dependencies
-        run: npm install
 
       - name: build
         run: npm run build
