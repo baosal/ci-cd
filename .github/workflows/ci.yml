@@ -2,7 +2,7 @@ name: CI
 on: [push, pull_request]
 jobs:
   deploy:
-    environment: ${{ github.ref_name == 'main' && 'dev' || 'dev' }}
+    environment: dev
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
