@@ -1,8 +1,8 @@
 name: CI
 on: [push, pull_request]
 jobs:
-  environment: ${{ github.ref_name == 'main' && 'dev' || 'dev' }}
-  build:
+  deploy:
+    environment: ${{ github.ref_name == 'main' && 'dev' || 'dev' }}
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
