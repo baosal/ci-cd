@@ -7,6 +7,7 @@
     "dev": "react-router dev",
     "start": "react-router-serve ./build/server/index.js",
     "test": "jest",
+    "lint": "eslint .",
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
@@ -24,8 +25,12 @@
     "@types/node": "^22",
     "@types/react": "^19.1.13",
     "@types/react-dom": "^19.1.9",
+    "eslint": "^9.37.0",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.4.0",
     "tailwindcss": "^4.1.13",
     "typescript": "^5.9.2",
+    "typescript-eslint": "^8.46.1",
     "vite": "^7.1.7",
     "vite-tsconfig-paths": "^5.1.4"
   }
